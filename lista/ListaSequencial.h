@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#define MAX 100
+struct aluno{
+    int matricula;
+    char nome[30];
+    float n1, n2, n3;
+};
+
+typedef struct lista Lista;
+
+Lista* cria_lista();
+
+void libera_lista(Lista* li);
+
+int tamanho_lista(Lista* li);
+
+int lista_cheia(Lista* li);
+
+int lista_vazia(Lista* li);
+
+int insere_lista_final(Lista* li, struct aluno al);
+
+int insere_lista_inicio(Lista* li, struct aluno al);
+
+int insere_ordem(Lista* li,  int pos, struct aluno al);
+
+int remove_lista_final(Lista* li);
+
+int remove_lista_inicio(Lista* li);
+
+int remove_elemento_escolhido(Lista* li, int pos);
+
+int consulta_lista_pos(Lista* li, int pos, struct aluno *al);
+
+int consulta_lista_conte(Lista* li, int value);
