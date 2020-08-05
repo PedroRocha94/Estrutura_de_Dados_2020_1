@@ -223,6 +223,7 @@ int main(){
 
     //criando a lista
     Lista *li = (Lista*) malloc(sizeof(Lista));
+    *li = NULL;
 
     struct aluno dados_aluno1, dados_aluno2, dados_aluno3;
     dados_aluno1.matricula = 1;   
