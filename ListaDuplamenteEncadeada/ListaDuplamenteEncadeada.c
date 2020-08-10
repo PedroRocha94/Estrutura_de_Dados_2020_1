@@ -42,7 +42,6 @@ int tamanho_lista(Lista* li){
         contador++;
         no = no->proximo;
     }
-    printf("Contador deu: ");
     return contador;
 }
 
